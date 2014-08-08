@@ -28,10 +28,10 @@ simpleSftp.throwException=false // set to true if you want to handle the excepti
 ##Usage
 Available methods
 ```
-upload(InputStream inputStream, String fileName)
-download(String fileName)
-remove(String fileName)
-rename(String oldPath, String newPath)
+uploadFile(InputStream inputStream, String fileName)
+downloadFile(String fileName)
+removeFile(String fileName)
+renameFile(String oldPath, String newPath)
 createDir(String dirName)
 ```
 
