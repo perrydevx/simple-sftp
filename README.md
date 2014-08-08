@@ -37,7 +37,7 @@ createDir(String dirName)
 
 ##Sample code
 Inject the service class, from there you can call the uploadFile(), downloadFile(), etc.
-
+```
 class MyController {
 	def simpleSftpService
 
@@ -47,4 +47,4 @@ class MyController {
 
 	simpleSftpService.uploadFile(inputStream, 'testx.xml')
 }
-
+```
