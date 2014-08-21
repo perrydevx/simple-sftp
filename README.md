@@ -17,7 +17,7 @@ dependencies {
 Add config to “grails-app/conf/Config.groovy”
 ```groovy
 simpleSftp.server='qwerty.houston.com'
-simpleSftp.username='helloworld’ 
+simpleSftp.username='helloworld'
 simpleSftp.password='' // Leave empty string if you are using a private key, if password has a value it will overwrite the private key.
 simpleSftp.remoteDir='/path_to_remote_dir/my_dir'
 simpleSftp.port=22
