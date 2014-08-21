@@ -37,7 +37,7 @@ createDir(String dirName)
 
 ##Sample code
 Inject the service class, from there you can call the uploadFile(), downloadFile(), etc.
-```
+```java
 class MyController {
 	ef simpleSftpService
 
