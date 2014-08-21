@@ -1,4 +1,4 @@
-##simple-sftp
+#simple-sftp Grails Plugin
 Simple way to connect and perform basic file actions to an SFTP server
 
 ##Description
