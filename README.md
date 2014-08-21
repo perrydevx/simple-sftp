@@ -5,16 +5,23 @@ Simple way to connect and perform basic file actions to an SFTP server
 Allows application to upload, download, delete, rename, create directory to an SFTP Server with one method call. The connections and boilerplate codes are all handled by the plugin.
 
 ##Installation
+Add plugin to ```grails-app/conf/BuildConfig.groovy```
+```groovy
+plugins {
+	compile  ':simple-sftp:0.1'
+}
+```
+
 
 ##Dependency
-Add dependency to “grails-app/conf/BuildConfig.groovy”
+Add dependency to ```grails-app/conf/BuildConfig.groovy```
 ```groovy
 dependencies {
 	compile  'com.jcraft:jsch:0.1.49'
 }
 ```
 ##Config
-Add config to “grails-app/conf/Config.groovy”
+Add config to ```grails-app/conf/Config.groovy```
 ```groovy
 simpleSftp.server='qwerty.houston.com'
 simpleSftp.username='helloworld'
