@@ -8,14 +8,14 @@ Allows application to upload, download, delete, rename, create directory to an S
 
 ##Dependency
 Add dependency to “grails-app/conf/BuildConfig.groovy”
-
-	dependencies {
-		compile  'com.jcraft:jsch:0.1.49'
-	}
-
+```groovy
+dependencies {
+	compile  'com.jcraft:jsch:0.1.49'
+}
+'''
 ##Config
 Add config to “grails-app/conf/Config.groovy”
-```
+```groovy
 simpleSftp.server='qwerty.houston.com'
 simpleSftp.username='helloworld’ 
 simpleSftp.password='' // Leave empty string if you are using a private key, if password has a value it will overwrite the private key.
@@ -27,7 +27,7 @@ simpleSftp.throwException=false // set to true if you want to handle the excepti
 
 ##Usage
 Available methods
-```
+```groovy
 uploadFile(InputStream inputStream, String fileName)
 downloadFile(String fileName)
 removeFile(String fileName)
@@ -37,7 +37,7 @@ createDir(String dirName)
 
 ##Sample code
 Inject the service class, from there you can call the uploadFile(), downloadFile(), etc.
-```java
+```groovy
 class MyController {
 	ef simpleSftpService
 
