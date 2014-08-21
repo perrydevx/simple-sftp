@@ -12,7 +12,7 @@ Add dependency to “grails-app/conf/BuildConfig.groovy”
 dependencies {
 	compile  'com.jcraft:jsch:0.1.49'
 }
-'''
+```
 ##Config
 Add config to “grails-app/conf/Config.groovy”
 ```groovy
@@ -39,7 +39,7 @@ createDir(String dirName)
 Inject the service class, from there you can call the uploadFile(), downloadFile(), etc.
 ```groovy
 class MyController {
-	ef simpleSftpService
+	def simpleSftpService
 
 	File file = File.createTempFile('testx', 'xml')
 	file.write('test xml file content here')
