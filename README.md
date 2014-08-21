@@ -16,12 +16,12 @@ Add dependency to “grails-app/conf/BuildConfig.groovy”
 ##Config
 Add config to “grails-app/conf/Config.groovy”
 ```
-simpleSftp.server=‘qwerty.houston.com'
-simpleSftp.username=‘helloworld’ 
+simpleSftp.server='qwerty.houston.com'
+simpleSftp.username='helloworld’ 
 simpleSftp.password='' // Leave empty string if you are using a private key, if password has a value it will overwrite the private key.
-simpleSftp.remoteDir=‘/path_to_remote_dir/my_dir’
+simpleSftp.remoteDir='/path_to_remote_dir/my_dir'
 simpleSftp.port=22
-simpleSftp.keyFilePath=‘/path_to_pk/my_pk.ppk'
+simpleSftp.keyFilePath='/path_to_pk/my_pk.ppk'
 simpleSftp.throwException=false // set to true if you want to handle the exceptions manually.
 ```
 
@@ -39,12 +39,12 @@ createDir(String dirName)
 Inject the service class, from there you can call the uploadFile(), downloadFile(), etc.
 ```
 class MyController {
-	def simpleSftpService
+	**def simpleSftpService**
 
 	File file = File.createTempFile('testx', 'xml')
-	file.write('test xml file contect')
+	file.write('test xml file content here')
 	InputStream inputStream = new BufferedInputStream(new FileInputStream(file))
 
-	simpleSftpService.uploadFile(inputStream, 'testx.xml')
+	**simpleSftpService.uploadFile(inputStream, 'testx.xml')**
 }
 ```
