@@ -8,7 +8,7 @@ Allows application to upload, download, delete, rename, create directory to an S
 Add plugin to ```grails-app/conf/BuildConfig.groovy```
 ```groovy
 plugins {
-	compile  ':simple-sftp:0.1'
+	compile ':simple-sftp:0.1'
 }
 ```
 
@@ -17,7 +17,7 @@ plugins {
 Add dependency to ```grails-app/conf/BuildConfig.groovy```
 ```groovy
 dependencies {
-	compile  'com.jcraft:jsch:0.1.49'
+	compile 'com.jcraft:jsch:0.1.49'
 }
 ```
 ##Config
