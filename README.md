@@ -39,12 +39,12 @@ createDir(String dirName)
 Inject the service class, from there you can call the uploadFile(), downloadFile(), etc.
 ```
 class MyController {
-	**def simpleSftpService**
+	ef simpleSftpService
 
 	File file = File.createTempFile('testx', 'xml')
 	file.write('test xml file content here')
 	InputStream inputStream = new BufferedInputStream(new FileInputStream(file))
 
-	**simpleSftpService.uploadFile(inputStream, 'testx.xml')**
+	simpleSftpService.uploadFile(inputStream, 'testx.xml')
 }
 ```
