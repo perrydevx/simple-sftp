@@ -39,12 +39,14 @@ createDir(String dirName)
 Inject the service class, from there you can call the uploadFile(), downloadFile(), etc.
 ```groovy
 class MyController {
+	// inject the service class.
 	def simpleSftpService
 
 	File file = File.createTempFile('testx', 'xml')
 	file.write('test xml file content here')
 	InputStream inputStream = new BufferedInputStream(new FileInputStream(file))
 
+	// method call on service class
 	simpleSftpService.uploadFile(inputStream, 'testx.xml')
 }
 ```
