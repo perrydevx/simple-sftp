@@ -4,7 +4,7 @@
   <groupId>org.grails.plugins</groupId>
   <artifactId>simple-sftp</artifactId>
   <packaging>zip</packaging>
-  <version>0.1</version>
+  <version>0.2</version>
   <name>Simple Sftp Plugin</name>
   <description>        Simple way to connect and perform basic file actions to an SFTP server. Allows application to upload, download, delete, rename, create directory to an SFTP Server with one method call.
     </description>

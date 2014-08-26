@@ -8,7 +8,7 @@ Allows application to upload, download, delete, rename, create directory to an S
 Add plugin to ```grails-app/conf/BuildConfig.groovy```
 ```groovy
 plugins {
-	compile ':simple-sftp:0.1'
+	compile ':simple-sftp:<latest-version>'
 }
 ```
 

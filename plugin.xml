@@ -1,4 +1,4 @@
-<plugin name='simple-sftp' version='0.1' grailsVersion='2.4 &gt; *'>
+<plugin name='simple-sftp' version='0.2' grailsVersion='2.2 &gt; *'>
   <author>perry dev</author>
   <authorEmail>perrydevx@gmail.com</authorEmail>
   <title>Simple Sftp Plugin</title>
