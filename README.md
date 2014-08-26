@@ -1,8 +1,8 @@
-#Grails Plugin simple-sftp 
-Simple way to connect and perform basic file actions to an SFTP server
+#Grails Simple SFTP Plugin (simple-sftp) 
+Simple way to connect and perform basic file actions to an SFTP server.
 
 ##Description
-Allows application to upload, download, delete, rename, create directory to an SFTP Server with one method call. The connections and boilerplate codes are all handled by the plugin.
+Allows application to upload, download, delete, rename, create directory to an SFTP Server with one method call. The connections and boilerplate codes are all handled by the plugin. The plugin uses JCraft JSch (http://www.jcraft.com/jsch/) for its SSH2 implementation. The client can be authenticated via private key or password.
 
 ##Installation
 Add plugin to ```grails-app/conf/BuildConfig.groovy```

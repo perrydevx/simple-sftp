@@ -9,7 +9,7 @@ class SimpleSftpGrailsPlugin {
     ]
 
     // TODO Fill in these fields
-    def title = "Simple Sftp Plugin" // Headline display name of the plugin
+    def title = "Grails Simple SFTP Plugin" // Headline display name of the plugin
     def author = "perry dev"
     def authorEmail = "perrydevx@gmail.com"
     def description = '''\
